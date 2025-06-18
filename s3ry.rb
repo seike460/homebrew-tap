@@ -13,7 +13,7 @@ class S3ry < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/seike460/s3ry/releases/download/v2.0.0/s3ry_Darwin_x86_64.tar.gz"
-      sha256 "1730ed9cd624ed12519e8da251e0380294e890f04dff64fcc26efbf55ff69036"
+      sha256 "79e190d1ef495281c7cb7d684591656261437058b87a2a50d00eee588fd707db"
 
       def install
         bin.install "s3ry"
@@ -24,7 +24,7 @@ class S3ry < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/seike460/s3ry/releases/download/v2.0.0/s3ry_Darwin_arm64.tar.gz"
-      sha256 "07dbbba82054fd5d7fa259898caebb55c6cef4ff7379455eed8688d056747d41"
+      sha256 "b99ba246961b1b3c57d7ed2793ff223a55434e1051d8841bb4b7c51e8c021990"
 
       def install
         bin.install "s3ry"
@@ -39,7 +39,7 @@ class S3ry < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/seike460/s3ry/releases/download/v2.0.0/s3ry_Linux_x86_64.tar.gz"
-        sha256 "d17b8c048634a0bc922d8997d1cf77a4773bfd1b49bffd6716cbd907c3550a3c"
+        sha256 "4bf12910f12cfe3e79eeff865c57d044e10190b833edd0656cd9061d92c27984"
 
         def install
           bin.install "s3ry"
@@ -52,7 +52,7 @@ class S3ry < Formula
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
         url "https://github.com/seike460/s3ry/releases/download/v2.0.0/s3ry_Linux_armv6.tar.gz"
-        sha256 "0683061ffc764d433b36c8b17ac64375a20c2b80e2a9523e07271ecf9c7b12f2"
+        sha256 "435c464427241ef839063349ed38b5f6075cff176c32a1c46954349b975838a2"
 
         def install
           bin.install "s3ry"
@@ -65,7 +65,7 @@ class S3ry < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/seike460/s3ry/releases/download/v2.0.0/s3ry_Linux_arm64.tar.gz"
-        sha256 "6b8256858f79c9856d646bbf18d359700144de2d2f35d5a492da86e519a6b863"
+        sha256 "b84ef5869d45126d84a6959bc1e6db0be6d2dd7a5e72c0158823ef0b72d99891"
 
         def install
           bin.install "s3ry"
