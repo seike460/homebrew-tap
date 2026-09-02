@@ -18,8 +18,6 @@ class S3ry < Formula
       def install
         bin.install "s3ry"
 
-        # Generate shell completions
-        generate_completions_from_executable(bin/"s3ry", "completion")
       end
     end
     if Hardware::CPU.arm?
@@ -29,8 +27,6 @@ class S3ry < Formula
       def install
         bin.install "s3ry"
 
-        # Generate shell completions
-        generate_completions_from_executable(bin/"s3ry", "completion")
       end
     end
   end
@@ -44,8 +40,6 @@ class S3ry < Formula
         def install
           bin.install "s3ry"
 
-          # Generate shell completions
-          generate_completions_from_executable(bin/"s3ry", "completion")
         end
       end
     end
@@ -57,8 +51,6 @@ class S3ry < Formula
         def install
           bin.install "s3ry"
 
-          # Generate shell completions
-          generate_completions_from_executable(bin/"s3ry", "completion")
         end
       end
     end
@@ -70,8 +62,6 @@ class S3ry < Formula
         def install
           bin.install "s3ry"
 
-          # Generate shell completions
-          generate_completions_from_executable(bin/"s3ry", "completion")
         end
       end
     end
