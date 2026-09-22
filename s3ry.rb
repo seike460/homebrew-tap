@@ -5,14 +5,14 @@
 class S3ry < Formula
   desc "Interactive terminal client for Amazon S3"
   homepage "https://github.com/seike460/s3ry"
-  version "3.0.0"
+  version "3.1.0"
   license "MIT"
 
   depends_on "go" => :optional
 
   on_macos do
-    url "https://github.com/seike460/s3ry/releases/download/v3.0.0/s3ry_Darwin_all.tar.gz"
-    sha256 "b2ea60841a7139e0fa6cad7877fe7dce714ce030ceb21144ee8c542834a4ea81"
+    url "https://github.com/seike460/s3ry/releases/download/v3.1.0/s3ry_Darwin_all.tar.gz"
+    sha256 "280df907ed2c64145b481bf526dbe3529f5279d1838fa2d6cf181637b0545f13"
 
     def install
       bin.install "s3ry"
@@ -22,8 +22,8 @@ class S3ry < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/seike460/s3ry/releases/download/v3.0.0/s3ry_Linux_x86_64.tar.gz"
-        sha256 "d55f70f7b3f6e5c07c0293bfa5833f49d7de787322436b0fb350c7cd47fdc90a"
+        url "https://github.com/seike460/s3ry/releases/download/v3.1.0/s3ry_Linux_x86_64.tar.gz"
+        sha256 "1811557bb8c4afc64167c5d0a979d397a8a870ab7eb338eaaac13cb8268bfe1e"
 
         def install
           bin.install "s3ry"
@@ -32,8 +32,8 @@ class S3ry < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/seike460/s3ry/releases/download/v3.0.0/s3ry_Linux_armv6.tar.gz"
-        sha256 "f2a4fe8d05bb8d117691de23a3e7c6ba63302ab387c06f16737d23d9dedb52fd"
+        url "https://github.com/seike460/s3ry/releases/download/v3.1.0/s3ry_Linux_armv6.tar.gz"
+        sha256 "8258a3003e2038b1bc9a73402a64ef9446919b8a4b63105748251e9ccf7c30d7"
 
         def install
           bin.install "s3ry"
@@ -42,8 +42,8 @@ class S3ry < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/seike460/s3ry/releases/download/v3.0.0/s3ry_Linux_arm64.tar.gz"
-        sha256 "77ba5be9058489c0c3e931e35d1e5622523236276601a83463f313f1df2f7de3"
+        url "https://github.com/seike460/s3ry/releases/download/v3.1.0/s3ry_Linux_arm64.tar.gz"
+        sha256 "9ce73812fcb675626c3d39e2087249d4b68f48ad2919c45bc8bd5d64a3fafd70"
 
         def install
           bin.install "s3ry"
