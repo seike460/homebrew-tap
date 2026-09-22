@@ -5,63 +5,48 @@
 class S3ry < Formula
   desc "Interactive terminal client for Amazon S3"
   homepage "https://github.com/seike460/s3ry"
-  version "2.0.0"
+  version "3.0.0"
   license "MIT"
 
   depends_on "go" => :optional
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/seike460/s3ry/releases/download/v2.0.0/s3ry_Darwin_x86_64.tar.gz"
-      sha256 "79e190d1ef495281c7cb7d684591656261437058b87a2a50d00eee588fd707db"
+    url "https://github.com/seike460/s3ry/releases/download/v3.0.0/s3ry_Darwin_all.tar.gz"
+    sha256 "b2ea60841a7139e0fa6cad7877fe7dce714ce030ceb21144ee8c542834a4ea81"
 
-      def install
-        bin.install "s3ry"
-
-      end
-    end
-    if Hardware::CPU.arm?
-      url "https://github.com/seike460/s3ry/releases/download/v2.0.0/s3ry_Darwin_arm64.tar.gz"
-      sha256 "b99ba246961b1b3c57d7ed2793ff223a55434e1051d8841bb4b7c51e8c021990"
-
-      def install
-        bin.install "s3ry"
-
-      end
+    def install
+      bin.install "s3ry"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/seike460/s3ry/releases/download/v2.0.0/s3ry_Linux_x86_64.tar.gz"
-        sha256 "4bf12910f12cfe3e79eeff865c57d044e10190b833edd0656cd9061d92c27984"
+        url "https://github.com/seike460/s3ry/releases/download/v3.0.0/s3ry_Linux_x86_64.tar.gz"
+        sha256 "d55f70f7b3f6e5c07c0293bfa5833f49d7de787322436b0fb350c7cd47fdc90a"
 
         def install
           bin.install "s3ry"
-
         end
       end
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/seike460/s3ry/releases/download/v2.0.0/s3ry_Linux_armv6.tar.gz"
-        sha256 "435c464427241ef839063349ed38b5f6075cff176c32a1c46954349b975838a2"
+        url "https://github.com/seike460/s3ry/releases/download/v3.0.0/s3ry_Linux_armv6.tar.gz"
+        sha256 "f2a4fe8d05bb8d117691de23a3e7c6ba63302ab387c06f16737d23d9dedb52fd"
 
         def install
           bin.install "s3ry"
-
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/seike460/s3ry/releases/download/v2.0.0/s3ry_Linux_arm64.tar.gz"
-        sha256 "b84ef5869d45126d84a6959bc1e6db0be6d2dd7a5e72c0158823ef0b72d99891"
+        url "https://github.com/seike460/s3ry/releases/download/v3.0.0/s3ry_Linux_arm64.tar.gz"
+        sha256 "77ba5be9058489c0c3e931e35d1e5622523236276601a83463f313f1df2f7de3"
 
         def install
           bin.install "s3ry"
-
         end
       end
     end
